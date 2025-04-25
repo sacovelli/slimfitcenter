@@ -1,44 +1,122 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SlimFit Center</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SlimFit Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #b38bff, #d8b4fe);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      background-color: #f8f5ff;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #9b59b6;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .image-row img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <img src="logo-slimfit.jpeg" alt="SlimFit Logo" class="logo">
-        <h1>La tua rinascita comincia oggi</h1>
-        <a class="whatsapp-btn" href="https://wa.me/393509690132" target="_blank">Contattaci su WhatsApp</a>
-    </header>
+  <header>
+    <img src="logo-slimfit.jpeg" alt="SlimFit Logo">
+    <h1>La tua rinascita comincia oggi</h1>
+    <p>Trattamenti professionali per il dimagrimento e il benessere</p>
+  </header>
 
-    <section id="chi-siamo">
-        <h2>Chi Siamo</h2>
-        <p>SlimFit è il centro dimagrante che ti guida nel ritrovare la tua forma ideale, con approccio motivante e personalizzato.</p>
-    </section>
+  <section class="highlight">
+    <h2 class="section-title">I nostri trattamenti</h2>
+    <p>Vacum terapia, consulenze nutrizionali e percorsi personalizzati per ogni esigenza.</p>
+    <div class="image-row">
+      <img src="vacum.jpeg" alt="Vacum Macchina 1">
+      <img src="vacum 1.jpeg" alt="Vacum Macchina 2">
+    </div>
+  </section>
 
-    <section id="trattamenti">
-        <h2>Trattamenti</h2>
-        <ul>
-            <li>Consulenze nutrizionali personalizzate</li>
-            <li>Trattamenti Vacuum Body Shape</li>
-        </ul>
-    </section>
+  <section>
+    <h2 class="section-title">Tecnologia all'avanguardia</h2>
+    <p>Scopri il nostro macchinario con cromoterapia, infrarossi e altri strumenti innovativi.</p>
+    <div class="image-row">
+      <img src="video 2.mp4" alt="Display Macchinario">
+    </div>
+  </section>
 
-    <section id="testimonianze">
-        <h2>Testimonianze</h2>
-        <blockquote>"Dopo solo un mese di trattamenti ho iniziato a sentirmi di nuovo bene nel mio corpo. Grazie SlimFit!" – Martina R.</blockquote>
-        <blockquote>"Mi sono sentita accolta e supportata. Non è solo un centro estetico, è un percorso per ritrovare se stesse." – Giulia V.</blockquote>
-        <blockquote>"I risultati sono arrivati prima di quanto mi aspettassi. Trattamenti efficaci e personale fantastico." – Elena D.</blockquote>
-    </section>
-
-    <section id="contatti">
-        <h2>Contatti</h2>
-        <p>📍 Via Murelle, 8 – Angri (SA) 84012</p>
-        <p>📲 <a href="https://wa.me/393509690132" target="_blank">Chatta su WhatsApp</a></p>
-        <p>📷 <a href="https://instagram.com/dottvirginia_covelli" target="_blank">@dottvirginia_covelli</a></p>
-        <p>🕓 Dal lunedì al sabato: 7:30 – 21:00</p>
-    </section>
+  <footer>
+    SlimFit Center - Via Murelle, 8, Angri (SA) 84012 - Instagram: @dottvirginia_covelli<br>
+    Orari: 7:30 - 21:00 | WhatsApp: 3509690132
+  </footer>
 </body>
 </html>
